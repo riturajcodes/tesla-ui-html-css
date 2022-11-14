@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.dashboard_left {
+  width: 30%;
+  height: 90vh;
+  background-color: #cdc5b8;
+}
+.dashboard_right {
+  width: 70%;
+  height: 90vh;
+  background-color: #b9b9b9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.dockbar {
+  width: 100%;
+  height: 10vh;
+  background-color: #000;
+  color: #fff;
+}
+.dashboard_left nav {
+  text-align: right;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.dashboard_left nav i {
+  font-size: 25px;
+  transform: translate(0px, 4px);
+}
+.dashboard_left_car {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard_right nav a {
+  color: rgb(61, 61, 61);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.dashboard_right nav {
+  width: 280px;
+  flex-shrink: 0;
+}
+.dashboard_right nav a i {
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.active-link {
+  background-color: #e4e4e4;
+}
+.dashboard_main {
+  width: 100%;
+}
+.dashboard_main nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.dashboard_main nav p {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(107, 107, 107);
+}
+.dashboard_main nav i {
+  color: rgb(107, 107, 107);
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 8px;
+}
+.stat_boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stat_box_left {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.stat_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgb(161, 161, 161);
+  flex-direction: column;
+  user-select: none;
+  cursor: pointer;
+  color: rgb(98, 98, 98);
+  transition-duration: 0.2s;
+  font-weight: 700;
+}
+.stat_box_left {
+  line-height: 20px;
+}
+.stat_box_left i {
+  font-size: 25px;
+}
+.stat_box_right {
+  margin-left: 15px;
+}
+.stat_box_right .stat_box {
+  height: 200px;
+}
+.stat_box_right i {
+  font-size: 25px;
+  font-weight: 600;
+}
+.stat_brightness {
+  width: 5px;
+  height: 90px;
+  background-color: #797979;
+  margin-bottom: 10px;
+}
+.brightness_adjust {
+  width: 5px;
+  height: 20px;
+  background-color: #fff;
+}
+.stat_box_left .stat_box:hover {
+  background-color: rgb(29, 69, 249);
+  color: #fff;
+}
+.stat_box_left_active {
+  background-color: rgb(29, 69, 249);
+  color: #fff;
+}
+.dockbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.dockbar_section:nth-child(1) i {
+  font-size: 35px;
+  cursor: pointer;
+}
+.dockbar_section:nth-child(5) i {
+  font-size: 35px;
+  cursor: pointer;
+}
+.dockbar_section:nth-child(3) i {
+  font-size: 25px;
+  cursor: pointer;
+  margin: 0px 10px;
+}
+.dashboard_right nav a {
+  transition-duration: 0.2s;
+}
+.dashboard_right nav a:hover {
+  background-color: #cfcfcf;
+}
